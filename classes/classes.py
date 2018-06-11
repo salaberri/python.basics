@@ -1,0 +1,49 @@
+# PYTHON IS AN OBJECT ORIENTED PROGRAMMING LANGUAGE
+# TO CREATE A CLASS USE THE KEYWORD CLASS
+# CLASS SHOULD START WITH CAPITALIZED LETTER
+
+
+# CLASS NAMED CAR
+# COLOR IS AN PROPERTY
+class Car:
+    color = "RED"
+
+
+# CREATE AN OBJECT
+myCar = Car()
+print(myCar.color)
+
+
+# BUILD-IN __INIT__() FUNCTION
+# ALL CLASSES HAVE A FUNCTION __INIT__()
+# THIS FUNCTION IS USED TO ASSIGN VALUES OR DO OTHER OPERATIONS WHEN OBJECT IS BEING CREATED
+class House:
+    def __init__(self, address, color):
+        self.address = address
+        self.color = color
+
+
+house = House("Any Street", "White")
+print(house.address)
+print(house.color)
+
+
+# SELF PARAMETER : IS A REFERENCE FOR THE CLASS ITSELF AND IS USED TO ACCESS CLASS PROPERTIES/VARIABLES
+# IT CAN BE CALLED USING ANOTHER NAME BUT IT NEEDS TO BE FIRST PARAMETER OF ANY CLASS FUNCTION
+
+
+# MODIFYING A OBJECT PROPERTY
+house.color = "Green"
+print(house.color)
+
+
+# DELETING A OBJECT PROPERTY
+del house.color
+
+
+# DELETING A OBJECT
+del house
+
+
+
+
